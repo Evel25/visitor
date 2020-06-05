@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/whiteColor">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/innerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHeight_percent="0.8"
+        android:background="@drawable/backcurved">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.2"
+            />
+        <TextView
+            android:id="@+id/logoname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgLogo"
+            android:textColor="@color/whiteColor"
+            android:text="Visitor"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/dosisbold"/>
+
+        <TextView
+            android:id="@+id/slogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logoname"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/whiteColor"
+            android:text="A New Way To See The World"
+            app:layout_constraintVertical_bias="0.1"
+            android:fontFamily="@font/dosisbold"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnDestinatios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/innerLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:fontFamily="@font/dosisregular"
+        android:textColor="@color/whiteColor"
+        android:text="Pick Up Your Next Destination"
+        android:background="@drawable/btn_back"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
